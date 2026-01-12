@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kaustubh Portfolio">
+    <meta name="description" content="Kaustubh - Expert AI/ML Engineer & Geospatial Specialist. Transform data challenges into breakthrough solutions with advanced machine learning and GIS analytics.">
     <meta name="keywords"
-        content="AI, Machine Learning, Data Analysis, Geospatial, GIS, Python, TensorFlow, Power BI, Freelancer, Data Scientist">
+        content="AI, Machine Learning, Data Analysis, Geospatial, GIS, Python, TensorFlow, Power BI, Freelancer, Data Scientist, QGIS, Google Earth Engine, Predictive Modeling">
+    <meta name="author" content="Kaustubh">
+    <meta name="robots" content="index, follow">
     <meta property="og:title" content="Kaustubh - AI/ML Engineer & Geospatial Specialist">
     <meta property="og:description"
         content="Transform your data challenges into breakthrough solutions with expert AI/ML and geospatial analysis services.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaustubhware.github.io/portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kaustubh - AI/ML Engineer & Geospatial Specialist">
+    <meta name="twitter:description" content="Expert AI/ML and geospatial solutions for data-driven insights">
+    <link rel="canonical" href="https://kaustubhware.github.io/portfolio">
     <title>Kaustubh Portfolio</title>
 
     <link rel="stylesheet" href="styles.css">
@@ -28,18 +35,55 @@
             send_page_view: true
         });
     </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Kaustubh",
+        "jobTitle": "AI/ML Engineer & Geospatial Specialist",
+        "description": "Expert in machine learning, data analysis, and geospatial analytics",
+        "url": "https://kaustubhware.github.io/portfolio",
+        "sameAs": [
+            "https://github.com/kaustubhware",
+            "https://www.linkedin.com/in/kaustubhware12/"
+        ],
+        "knowsAbout": [
+            "Machine Learning",
+            "Data Analysis",
+            "Geospatial Analysis",
+            "Python",
+            "TensorFlow",
+            "Google Earth Engine",
+            "Power BI"
+        ],
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Symbiosis Institute of Computer Studies and Research"
+        },
+        "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Data Scientist",
+            "occupationLocation": {
+                "@type": "Place",
+                "name": "Pune, India"
+            }
+        }
+    }
+    </script>
 </head>
 
 <body>
     <!-- Loader -->
     <div id="loader" class="loader">
-        <div class="loader-content">
-            <div class="spinner">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+        <div class="liquid-loader">
+            <div class="loader-track">
+                <div class="liquid-fill"></div>
             </div>
-            <p>Loading Portfolio...</p>
+            <div class="loading-text">
+                Loading Portfolio<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+            </div>
         </div>
     </div>
 
@@ -68,13 +112,13 @@
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#services" class="nav-link">Expertise</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tools" class="nav-link">Tools</a>
                 </li>
                 <li class="nav-item">
                     <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
@@ -113,9 +157,22 @@
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="profile-pic">
-                    <img src="DSC_5024.JPG" alt="Kaustubh Profile" />
+            <div class="hero-animation">
+                <div class="globe-container">
+                    <div class="globe">
+                        <div class="globe-inner">
+                            <div class="continent"></div>
+                            <div class="continent"></div>
+                            <div class="continent"></div>
+                        </div>
+                    </div>
+                    <div class="data-points">
+                        <div class="data-point" style="top: 20%; left: 30%;">📊</div>
+                        <div class="data-point" style="top: 40%; left: 70%;">🗺️</div>
+                        <div class="data-point" style="top: 60%; left: 20%;">🤖</div>
+                        <div class="data-point" style="top: 80%; left: 60%;">📈</div>
+                    </div>
+                    <div class="orbit-ring"></div>
                 </div>
             </div>
         </div>
@@ -125,163 +182,222 @@
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">
-                <span class="title-icon">👨‍💻</span>
                 About Me
             </h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>I specialize in transforming complex datasets into actionable insights through cutting-edge
-                        machine learning and advanced geospatial analysis. My expertise lies in developing
-                        high-performance predictive models and intelligent mapping solutions that drive strategic
-                        business decisions.</p>
-                    <p>As an independent consultant, I partner with forward-thinking organizations to architect custom
-                        ML algorithms and innovative geospatial platforms. From enterprise-grade analytics dashboards to
-                        sophisticated location-intelligence applications, I deliver solutions that create measurable
-                        business impact.</p>
-                    <div class="experience-section">
-                        <h3>Experience</h3>
-                        <div class="experience-item">
-                            <div class="experience-header">
-                                <h4>Data Analyst Intern</h4>
-                                <span class="company">Bosch Pvt Ltd, IND</span>
-                                <span class="duration">March 25 - July 25</span>
-                            </div>
-                            <ul class="experience-details">
-                                <li>Assisted logistics and warehouse data planning team in analyzing inventory flow,
-                                    stock availability, and delivery metrics</li>
-                                <li>Contributed to cleansing and transforming supply chain data using Python and Pandas
-                                    to ensure consistency across systems</li>
-                                <li>Developed automated Excel-based dashboards integrated with SQL queries for material
-                                    tracking and consumption patterns</li>
-                                <li>Gained practical exposure to ERP systems and process improvement techniques</li>
-                            </ul>
-                        </div>
+                <div class="about-profile">
+                    <div class="about-image">
+                        <img src="DSC_5024.png" alt="Kaustubh Profile" />
                     </div>
-                    <div class="education-section">
-                        <h3>Education</h3>
-                        <div class="education-item">
-                            <div class="education-header">
-                                <h4>MSC-CA (Data Science)</h4>
-                                <span class="institution">Symbiosis Institute of Computer Studies and Research, Pune,
-                                    IND</span>
-                                <span class="duration">June 23 - May 25</span>
-                                <span class="cgpa">CGPA: 9.5</span>
+                    <h3>AI/ML Engineer & Geospatial Analyst</h3>
+                    <p>Passionate about turning raw data into meaningful insights through advanced analytics and intelligent automation. I create predictive models and data-driven solutions that empower businesses to make smarter decisions and unlock hidden opportunities.</p>
+                    
+                    <div class="about-details">
+                        <div class="detail-row">
+                            <div class="detail-item">
+                                <span class="detail-label">Age:</span>
+                                <span class="detail-value">23</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Location:</span>
+                                <span class="detail-value">Pune, India</span>
                             </div>
                         </div>
-                        <div class="education-item">
-                            <div class="education-header">
-                                <h4>BSC Computer Science</h4>
-                                <span class="institution">Savitribai Phule Pune University, Nashik, IND</span>
-                                <span class="duration">Sept 20 - May 23</span>
-                                <span class="cgpa">CGPA: 7.69</span>
+                        <div class="detail-row">
+                            <div class="detail-item">
+                                <span class="detail-label">Education:</span>
+                                <span class="detail-value">MSc Data Science</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Status:</span>
+                                <span class="detail-value">Independent Consultant</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="certifications-section">
-                        <h3>Certifications</h3>
-                        <div class="cert-slider">
-                            <div class="cert-container">
-                                <div class="cert-card">
-                                    <div class="cert-icon">
-                                        <i class="fas fa-chart-bar"></i>
-                                    </div>
-                                    <h4>Microsoft Power BI</h4>
-                                    <p class="cert-issuer">Coursera</p>
-                                    <span class="cert-year">Feb 2024</span>
-                                </div>
-                                <div class="cert-card">
-                                    <div class="cert-icon">
-                                        <i class="fas fa-database"></i>
-                                    </div>
-                                    <h4>Data Analytics by IBM</h4>
-                                    <p class="cert-issuer">Coursera</p>
-                                    <span class="cert-year">Dec 2023</span>
-                                </div>
-                                <div class="cert-card">
-                                    <div class="cert-icon">
-                                        <i class="fas fa-robot"></i>
-                                    </div>
-                                    <h4>Generative AI</h4>
-                                    <p class="cert-issuer">UpGrad</p>
-                                    <span class="cert-year">2024</span>
-                                </div>
+                        <div class="detail-row">
+                            <div class="detail-item">
+                                <span class="detail-label">Contact:</span>
+                                <span class="detail-value">+91 7721809744</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Availability:</span>
+                                <span class="detail-value">Open for Projects</span>
+                            </div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-item">
+                                <span class="detail-label">Email:</span>
+                                <span class="detail-value">kaustubhware12@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Born:</span>
+                                <span class="detail-value">August 12, 2001</span>
                             </div>
                         </div>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3 class="counter" data-target="25">0</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h3 class="counter" data-target="3">0</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3 class="counter" data-target="8">0</h3>
-                            <p>Technologies Mastered</p>
-                        </div>
-                        <div class="stat">
-                            <h3 class="counter" data-target="95">0</h3>
-                            <p>Success Rate %</p>
-                        </div>
-                    </div>
+                    
+                    <p>Since 2023, I've been building my expertise as a freelance data scientist, constantly exploring emerging technologies and delivering custom analytics solutions that drive real business value for my clients worldwide.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- Services Section -->
+    <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">
-                <span class="title-icon">🚀</span>
-                Skills & Technologies
+                Expertise
             </h2>
-            <div class="skills-slider">
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3>Geospatial & GIS</h3>
-                        <div class="skill-items">
-                            <span class="skill-item">QGIS</span>
-                            <span class="skill-item">GEE</span>
-                            <span class="skill-item">Geopandas</span>
-                            <span class="skill-item">Folium</span>
-                            <span class="skill-item">Leaflet</span>
-                            <span class="skill-item">GDAL</span>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analytics & Visualization</h3>
+                    <p>Transform raw data into actionable insights with interactive dashboards and comprehensive reports
+                        using Power BI, Tableau, and Python.</p>
+                    <ul>
+                        <li>Business Intelligence Dashboards</li>
+                        <li>Statistical Analysis</li>
+                        <li>Data Visualization</li>
+                        <li>Performance Metrics</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Machine Learning Solutions</h3>
+                    <p>Build predictive models and AI solutions to automate processes and enhance decision-making
+                        capabilities for your business.</p>
+                    <ul>
+                        <li>Predictive Modeling</li>
+                        <li>Classification & Regression</li>
+                        <li>Deep Learning</li>
+                        <li>Model Deployment</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Geospatial Analysis</h3>
+                    <p>Leverage location intelligence and spatial data analysis to solve complex geographical and
+                        environmental challenges.</p>
+                    <ul>
+                        <li>GIS Mapping & Analysis</li>
+                        <li>Satellite Image Processing</li>
+                        <li>Spatial Data Modeling</li>
+                        <li>Location Intelligence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title">
+                Tools & Software
+            </h2>
+            <div class="tools-categories">
+                <div class="tool-category">
+                    <h3>Development & Programming</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="proficiency expert"></div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                            <div class="proficiency expert"></div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                            <div class="proficiency intermediate"></div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                            <div class="proficiency expert"></div>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Machine Learning</h3>
-                        <div class="skill-items">
-                            <span class="skill-item">Python</span>
-                            <span class="skill-item">TensorFlow</span>
-                            <span class="skill-item">PyTorch</span>
-                            <span class="skill-item">Random Forest</span>
-                            <span class="skill-item">XGBoost</span>
-                            <span class="skill-item">CNN</span>
+                </div>
+                <div class="tool-category">
+                    <h3>Data Science & ML</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fas fa-robot"></i>
+                            <span>TensorFlow</span>
+                            <div class="proficiency expert"></div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Pandas</span>
+                            <div class="proficiency expert"></div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-calculator"></i>
+                            <span>NumPy</span>
+                            <div class="proficiency expert"></div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Scikit-learn</span>
+                            <div class="proficiency expert"></div>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Data Analysis</h3>
-                        <div class="skill-items">
-                            <span class="skill-item">Pandas</span>
-                            <span class="skill-item">NumPy</span>
-                            <span class="skill-item">Matplotlib</span>
-                            <span class="skill-item">Seaborn</span>
-                            <span class="skill-item">SQL</span>
-                            <span class="skill-item">Power BI</span>
+                </div>
+                <div class="tool-category">
+                    <h3>GIS & Geospatial</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fas fa-map"></i>
+                            <span>QGIS</span>
+                            <div class="proficiency expert"></div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Google Earth Engine</span>
+                            <div class="proficiency expert"></div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>Geopandas</span>
+                            <div class="proficiency expert"></div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Folium</span>
+                            <div class="proficiency intermediate"></div>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Web Development</h3>
-                        <div class="skill-items">
-                            <span class="skill-item">Django</span>
-                            <span class="skill-item">Flask</span>
-                            <span class="skill-item">FastAPI</span>
-                            <span class="skill-item">HTML/CSS</span>
-                            <span class="skill-item">JavaScript</span>
-                            <span class="skill-item">REST APIs</span>
+                </div>
+                <div class="tool-category">
+                    <h3>Visualization & BI</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Power BI</span>
+                            <div class="proficiency expert"></div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-chart-area"></i>
+                            <span>Matplotlib</span>
+                            <div class="proficiency expert"></div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Seaborn</span>
+                            <div class="proficiency expert"></div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-chart-scatter"></i>
+                            <span>Plotly</span>
+                            <div class="proficiency intermediate"></div>
                         </div>
                     </div>
                 </div>
@@ -293,27 +409,25 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">
-                <span class="title-icon">💼</span>
                 Featured Projects
             </h2>
             <div class="projects-grid">
+
                 <div class="project-card visible">
                     <div class="project-image">
-                        <i class="fas fa-satellite"></i>
+                        <i class="fas fa-satellite-dish"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Unsupervised Crop Classification</h3>
-                        <p>Interactive Google Earth Engine application for unsupervised crop classification using
-                            satellite imagery and K-means clustering algorithm to identify different crop types.</p>
+                        <h3>AquaWatch - AI-Powered Satellite Analysis Platform</h3>
+                        <p>Comprehensive satellite imagery analysis platform using Google Earth Engine for real-time water resources, agriculture, and weather monitoring with ML-based crop classification.</p>
                         <div class="project-tech">
+                            <span>Django</span>
                             <span>Google Earth Engine</span>
                             <span>Sentinel-2</span>
-                            <span>Embedding Dataset</span>
+                            <span>Machine Learning</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://rottengrapes.projects.earthengine.app/view/unsupervised-crop-classification"
-                                class="btn btn-small" target="_blank">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-outline">GitHub</a>
+                            <a href="https://github.com/kaustubhware/aquawatch" class="btn btn-small btn-outline" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -338,6 +452,25 @@
                     </div>
                 </div>
                 <div class="project-card visible">
+                    <div class="project-image">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>SmartDocs - AI Document Analysis</h3>
+                        <p>Multi-language document processing solution with AI-powered analysis, supporting 6+ languages with automatic detection, sentiment analysis, and intelligent text extraction from multiple file formats.</p>
+                        <div class="project-tech">
+                            <span>Streamlit</span>
+                            <span>Groq API</span>
+                            <span>Python</span>
+                            <span>Plotly</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ai-document-chat.streamlit.app/" class="btn btn-small" target="_blank">Live Demo</a>
+                            <a href="https://github.com/kaustubhware/smartdocs-llm" class="btn btn-small btn-outline" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card hidden">
                     <div class="project-image">
                         <i class="fas fa-leaf"></i>
                     </div>
@@ -426,65 +559,10 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon">💼</span>
-                Expertise
-            </h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Data Analytics & Visualization</h3>
-                    <p>Transform raw data into actionable insights with interactive dashboards and comprehensive reports
-                        using Power BI, Tableau, and Python.</p>
-                    <ul>
-                        <li>Business Intelligence Dashboards</li>
-                        <li>Statistical Analysis</li>
-                        <li>Data Visualization</li>
-                        <li>Performance Metrics</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>Machine Learning Solutions</h3>
-                    <p>Build predictive models and AI solutions to automate processes and enhance decision-making
-                        capabilities for your business.</p>
-                    <ul>
-                        <li>Predictive Modeling</li>
-                        <li>Classification & Regression</li>
-                        <li>Deep Learning</li>
-                        <li>Model Deployment</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h3>Geospatial Analysis</h3>
-                    <p>Leverage location intelligence and spatial data analysis to solve complex geographical and
-                        environmental challenges.</p>
-                    <ul>
-                        <li>GIS Mapping & Analysis</li>
-                        <li>Satellite Image Processing</li>
-                        <li>Spatial Data Modeling</li>
-                        <li>Location Intelligence</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">
-                <span class="title-icon">📬</span>
                 Get In Touch
             </h2>
             <div class="contact-wrapper">
@@ -498,24 +576,21 @@
                 </div>
                 
                 <div class="contact-methods">
-                    <a href="mailto:kaustubhware12@gmail.com" class="contact-method email">
-                        <div class="method-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="method-info">
-                            <h4>Email Me</h4>
-                            <p>kaustubhware12@gmail.com</p>
-                        </div>
+                    <a href="https://www.linkedin.com/in/kaustubhware12/" class="contact-btn linkedin" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        Add me on LinkedIn
                     </a>
-
-                    <a href="https://wa.me/917721809744" class="contact-method whatsapp" target="_blank">
-                        <div class="method-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="method-info">
-                            <h4>WhatsApp</h4>
-                            <p>+91 7721809744</p>
-                        </div>
+                    <a href="javascript:void(0)" class="contact-btn meeting" onclick="openCalendar()">
+                        <i class="fas fa-calendar"></i>
+                        Book a Meeting
+                    </a>
+                    <a href="mailto:kaustubhware12@gmail.com" class="contact-btn email">
+                        <i class="fas fa-envelope"></i>
+                        Drop me email
+                    </a>
+                    <a href="https://wa.me/917721809744" class="contact-btn whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Schedule call with me
                     </a>
                 </div>
 
@@ -530,17 +605,26 @@
                     </div>
                 </div>
 
+
+
                 <div class="social-links">
                     <a href="https://github.com/kaustubhware" class="social-link" target="_blank" title="GitHub">
                         <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/kaustubhware12/" class="social-link" target="_blank" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+    <!-- Cal.com Embed Modal -->
+    <div id="calModal" class="cal-modal">
+        <div class="cal-modal-content">
+            <span class="cal-close" onclick="closeCalendar()">&times;</span>
+            <iframe src="https://cal.com/kaustubh-ware-bouf4s" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+    </div>
 
     <!-- Back to Top Button -->
     <button id="back-to-top" class="back-to-top">
