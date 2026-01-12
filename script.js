@@ -54,13 +54,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Duplicate content for infinite scroll
-const skillsContainer = document.querySelector('.skills-container');
 const certContainer = document.querySelector('.cert-container');
-
-if (skillsContainer) {
-    const originalSkills = skillsContainer.innerHTML;
-    skillsContainer.innerHTML = originalSkills + originalSkills;
-}
 
 if (certContainer) {
     const originalCerts = certContainer.innerHTML;
@@ -105,6 +99,125 @@ function animateCounters() {
     });
 }
 
+// Contact Form
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const formObject = {};
+        formData.forEach((value, key) => {
+            formObject[key] = value;
+        });
+        
+        // Track form submission
+        trackEvent('form_submission', {
+            project_type: formObject['project-type'],
+            form_type: 'contact'
+        });
+        
+        // Simulate form submission (replace with actual endpoint)
+        const submitBtn = this.querySelector('.form-submit');
+        const originalText = submitBtn.innerHTML;
+        
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+        
+        setTimeout(() => {
+            submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+            submitBtn.style.background = '#27ae60';
+            
+            // Reset form after 2 seconds
+            setTimeout(() => {
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.style.background = '';
+                submitBtn.disabled = false;
+            }, 2000);
+        }, 1500);
+    });
+}
+
+// Enhanced Analytics Tracking
+function trackEvent(eventName, parameters = {}) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', eventName, {
+            ...parameters,
+            timestamp: new Date().toISOString()
+        });
+    }
+}
+
+// Track blog article clicks
+document.querySelectorAll('.read-more').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const articleTitle = link.closest('.blog-card').querySelector('h3').textContent;
+        trackEvent('blog_click', {
+            article_title: articleTitle
+        });
+    });
+});
+
+// Track tool interactions
+document.querySelectorAll('.tool-item').forEach(tool => {
+    tool.addEventListener('click', () => {
+        const toolName = tool.querySelector('span').textContent;
+        trackEvent('tool_click', {
+            tool_name: toolName
+        });
+    });
+});
+
+// Track case study views
+document.querySelectorAll('.case-study-card').forEach(card => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const caseStudyTitle = entry.target.querySelector('h3').textContent;
+                trackEvent('case_study_view', {
+                    case_study: caseStudyTitle
+                });
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    observer.observe(card);
+});
+
+// Track section visibility
+const sections = ['about', 'projects', 'services', 'blog', 'tools', 'contact'];
+sections.forEach(sectionId => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    trackEvent('section_view', {
+                        section: sectionId
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+        
+        observer.observe(section);
+    }
+});
+
+// Performance monitoring
+window.addEventListener('load', () => {
+    if ('performance' in window) {
+        const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+        trackEvent('page_performance', {
+            load_time: loadTime,
+            page_type: 'portfolio'
+        });
+    }
+});
+
 // Google Analytics tracking
 function trackEvent(eventName, parameters = {}) {
     if (typeof gtag !== 'undefined') {
@@ -148,6 +261,17 @@ backToTopBtn.addEventListener('click', () => {
 
 
 
+
+
+
+// Cal.com Modal
+function openCalendar() {
+    document.getElementById('calModal').style.display = 'block';
+}
+
+function closeCalendar() {
+    document.getElementById('calModal').style.display = 'none';
+}
 
 // Initialize page
 document.addEventListener('DOMContentLoaded', () => {
